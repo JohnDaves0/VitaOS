@@ -1,0 +1,134 @@
+body {
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.terminal {
+    height: 350px;
+    margin-bottom: 8px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-wrap: break-word;
+}
+
+.bar {
+    display: flex;
+gap: 5px;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: 0px;
+}
+
+p {
+    margin: 0;
+    display: block;
+}
+
+.pathtext {
+    margin-bottom: 5px;
+}
+
+.booting {
+    opacity: 0;
+}
+
+h1 {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.work {}
+
+.face, .idiotface {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.face.hidden, .idiotface.hidden {
+    display: none;
+}
+
+pre {
+    font-size: 20px;
+    padding: 0;
+    margin: 10px auto;
+    display: block;
+}
+
+#treediagram {
+    font-size: 18px;
+    margin: 0;
+}
+
+.idiottext {
+    display: block;
+    letter-spacing: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.restarttext {
+    margin-top: 10px;
+}
+
+.foxtrottitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.block {
+    display: inline-block;
+    width: 30%;
+}
+
+.switchkeytext {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    height: 26px;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.center {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    height: 20px;
+}

@@ -1,1 +1,2 @@
 # VitaOS
+Explore the terminal.
