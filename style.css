@@ -13,6 +13,8 @@ body {
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px;
+    max-width: 1000px;
+    margin-top: 8px;
 }
 
 .terminal {
