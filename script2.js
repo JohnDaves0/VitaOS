@@ -833,14 +833,14 @@ function handleKillSwitch() {
             timerText.textContent = `This key is valid for: ${timer}s`;
             if (timer <= 0) {
                 clearInterval(tick);
+                begin = false;
                 printLine(rrrKillSwitch, "PROCESS CANCELED.");
                 setTimeout(() => {
                     changeDisplay(ending);
-                    begin = false;
                     line.remove();
                     setTimeout(() => endingText.textContent = "STAGI ENDING", 2000);
                     setTimeout(() => creatorText.textContent = "A GAME BY JOHN DAVES", 5000);
-                }, 6000);
+                }, 4000);
             }
         }, 100);
         setTimeout(() => printLine(rrrKillSwitch, "Stagi: There you are."), 4120);

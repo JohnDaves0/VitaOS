@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -13,17 +14,18 @@ body {
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .terminal {
     height: 60vh;
     margin-bottom: 8px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     display: flex;
     flex-direction: column-reverse;
     overflow-wrap: break-word;
+    scrollbar-width: none;
 }
 
 .bar {
@@ -124,7 +126,7 @@ pre {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 350px;
+    height: 60vh;
 }
 
 .center {
