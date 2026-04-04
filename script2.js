@@ -682,7 +682,15 @@ function listHidden() {
 
 let isData = false;
 function handleFoxtrot(input) {
-    if (input === "emaildb3") {
+    if (isData === true) {
+        if (input === "q") {
+            line.remove();
+            changeDisplay(foxtrot);
+            line.remove();
+            isData = false;
+        } 
+    }
+    else if (input === "emaildb3") {
         printLine(foxtrot, 'Opened "emaildb3"');
         changeDisplay(emaildb3);
         isData = true;
@@ -709,11 +717,6 @@ function handleFoxtrot(input) {
     } else if (input === "project_helix") {
         printLine(foxtrot, "ERROR 403: FORBIDDEN");
         line.style.color = "red";
-    } else if (input === "q" && isData === true) {
-        line.remove();
-        changeDisplay(foxtrot);
-        line.remove();
-        isData = false;
     } else if (input === "q") {
         isFoxtrot = false;
         isFile = false;
